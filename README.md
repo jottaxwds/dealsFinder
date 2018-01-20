@@ -8,3 +8,11 @@ Nevertheless, the Graph.js and DealGraph.js libraries, calculates the cheapest/f
 I created a logo and a short styleguide to follow in the implementation of the styles and colors.
 
 See ./images/desingGuide for more information.
+
+Technologies used:
+
+- Javascript
+- HTML
+- CSS3
+- Bootstrap
+- Jquery
