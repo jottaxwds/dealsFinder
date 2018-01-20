@@ -1,19 +1,24 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Deals Finder</title>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="./css/select.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/skin.css" />
     </head>
     <body>
         <div class="container">
-        
+            
             <!-- Filter bar -->
-            <div class="InlineRow FilterBar__Row">
-
+            <div class="InlineRow FilterBar__Row apparition">
+                <div class="LogoBar__wrapper col-md-2 col-sm-2 col-xs-12">
+                    <img class="logo" src="./images/myLogoExample.png" />
+                    <h1 class="title">TRIPPER</h1>
+                </div>
                 <div class="FilterBar__Wrapper col-md-8 col-sm-8 col-xs-12">
 
                     <div class="Form__group--wrapper col-md-12 col-sm-12 col-xs-12">
@@ -30,7 +35,8 @@
                     </div>
 
                     <!-- search type -->
-                    <div class="Filter__options col-md-12 col-sm-12 col-xs-12">
+                    <div class="Filter__options col-md-6 col-sm-6 col-xs-8">
+                        <label class="Form__label">Option:</label>
                         <!-- search options -->
                         <ul class="Switcher__list">
                             <li id="cheap" class="Switcher__element Switcher__element--left selected">
@@ -40,14 +46,18 @@
                                 Fast
                             </li>
                         </ul>
-                    
+                    </div>
+                    <div class="Filter__options reset col-md-6 col-sm-6 col-xs-4">
+                        <button id="reset">
+                            <i class="fa fa-close"></i> <span>Clear</span>
+                        </button>
                     </div>
 
 
                 </div>
 
                 <!-- search -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                     <button id="search">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
@@ -57,29 +67,23 @@
             </div> <!-- filter bar component -->
 
             <!-- trip cards for results -->
-            <div class="Row">
+            <div id="deal-container" class="InlineRow">
+                <div class="Deal__wrapper">
+                    <div id="deal-info" class="DealTitle__wrapper col-md-12 col-sm-12 col-xs-12 dealing">
+                        
+                    </div>
+                    
+                    <div class="TripList__wrapper col-md-12 col-sm-12 col-xs-12">
+                        <ul id="deal-list">
+                            
 
-                <div class="DealTitle__wrapper col-md-12 col-sm-12 col-xs-12">
-                    <h3>London</h3>
-                    <i class="fa fa-chevron-right"></i>
-                    <h3>Madrid</h3>
-                </div>
-
-                <div class="TripList__wrapper col-md-12 col-sm-12 col-xs-12">
-                    <ul>
-                        <li>
-                            <div class="Card__info">
-
-                            </div>
-                            <div class="Card__aditionalInfo">
-
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="TripList__results col-md-12 col-sm-12 col-xs-12">
-
+                        </ul>
+                        <div id="deal-totals">
+                            
+                        </div>
                     </div>
                 </div>
+                
 
             </div><!-- end tripcards -->
 

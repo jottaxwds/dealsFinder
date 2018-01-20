@@ -1,3 +1,4 @@
+// Graph model to create nodes and edges with variable "distance" between them (cheap/fast)
 var Graph = (function (undefined) {
 
 	var extractKeys = function (obj) {
