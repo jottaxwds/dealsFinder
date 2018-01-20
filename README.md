@@ -16,3 +16,6 @@ Technologies used:
 - CSS3
 - Bootstrap
 - Jquery
+
+
+NOTE: In the yellow cards that displays the fastest/cheapest deals, you can see more information by clicking in the arrow on the bottom-right corner.
