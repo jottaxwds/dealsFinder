@@ -3,14 +3,96 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Deals Finder</title>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/select.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/skin.css" />
     </head>
     <body>
+        <div class="container">
+        
+            <!-- Filter bar -->
+            <div class="InlineRow FilterBar__Row">
 
-        <h1> hello world! </h1>
+                <div class="FilterBar__Wrapper col-md-8 col-sm-8 col-xs-12">
+
+                    <div class="Form__group--wrapper col-md-12 col-sm-12 col-xs-12">
+                        <label class="Form__label">From:</label>
+                        <select id="from__selector" data-callback="fromChange" name="from_selector" data-placeholder=" ">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="Form__group--wrapper col-md-12 col-sm-12 col-xs-12">
+                        <label class="Form__label">To:</label>
+                        <select id="to__selector" data-callback="toChange" name="to_selector" data-placeholder=" ">
+                            <option value=""></option>
+                        </select>
+                    </div>
+
+                    <!-- search type -->
+                    <div class="Filter__options col-md-12 col-sm-12 col-xs-12">
+                        <!-- search options -->
+                        <ul class="Switcher__list">
+                            <li id="cheap" class="Switcher__element Switcher__element--left selected">
+                                Cheap
+                            </li>
+                            <li id="fast" class="Switcher__element Switcher__element--right">
+                                Fast
+                            </li>
+                        </ul>
+                    
+                    </div>
+
+
+                </div>
+
+                <!-- search -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <button id="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <!-- search -->
+            </div> <!-- filter bar component -->
+
+            <!-- trip cards for results -->
+            <div class="Row">
+
+                <div class="DealTitle__wrapper col-md-12 col-sm-12 col-xs-12">
+                    <h3>London</h3>
+                    <i class="fa fa-chevron-right"></i>
+                    <h3>Madrid</h3>
+                </div>
+
+                <div class="TripList__wrapper col-md-12 col-sm-12 col-xs-12">
+                    <ul>
+                        <li>
+                            <div class="Card__info">
+
+                            </div>
+                            <div class="Card__aditionalInfo">
+
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="TripList__results col-md-12 col-sm-12 col-xs-12">
+
+                    </div>
+                </div>
+
+            </div><!-- end tripcards -->
+
+
+
+
+        </div> <!-- end container -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script><script src="./js/select.min.js"></script>
+        <script src="./js/Graph.js"></script>
+        <script src="./js/DealGraph.js"></script>
+        <script src="./js/main.js"></script>
 
     </body>
 </html>
