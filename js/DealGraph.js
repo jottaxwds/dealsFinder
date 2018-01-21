@@ -49,7 +49,6 @@ function getCheapestDeal(info, origin, destiny) {
 
 
 function getFastestDeal (info, origin, destiny) {
-    debugger;
     var quickestRoutes = {};
     var quickestGraph = {};
     var auxKey = "";
